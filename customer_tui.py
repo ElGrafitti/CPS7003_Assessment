@@ -1,6 +1,6 @@
 def customer_menu():
     menu = """
-    St Mary's DataTech Solutions Management System - Customer
+    St Mary's DataTech Solutions Management System - Customers
     ------------------------------------------------------------
 
     What would you like to do?
@@ -16,7 +16,11 @@ def customer_menu():
 
 def customer_details():
     print("Please fill in the details of new Customer")
-    return input("Please enter the First name: "), input("Please enter the Last name: "), input("Please enter Email: "), input("Please enter Mobile Number: ")
+    return (input("Please enter the First name: "),
+            input("Please enter the Last name: "),
+            input("Please enter Email: "),
+            input("Please enter Mobile Number: "),
+            input("Please enter Address"))
 
 
 def status(message):

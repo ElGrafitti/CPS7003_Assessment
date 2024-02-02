@@ -23,7 +23,7 @@ class TransactionCRUD:
         finally:
             session.close()
 
-    def get_all_transactions(self):
+    def show_all_transactions(self):
         session = self.Session()
         try:
             return session.query(Transaction).all()

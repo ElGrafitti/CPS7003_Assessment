@@ -5,8 +5,8 @@ class CustomerService:
     def __init__(self):
         self.customer_crud = CustomerCRUD()
 
-    def create_customer(self, first_name, last_name, email, address, mobile_number):
-        return self.customer_crud.create_customer(first_name, last_name, email, address, mobile_number)
+    def create_customer(self, first_name, last_name, email, mobile_number, address):
+        return self.customer_crud.create_customer(first_name, last_name, email, mobile_number, address)
 
     def get_all_customers(self):
         return self.customer_crud.get_all_customers()

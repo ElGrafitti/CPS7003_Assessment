@@ -5,7 +5,9 @@ def main_menu():
 
     What would you like to do?
     [1] Manage Employees
-    [2] Manage Users
+    [2] Manage Departments
+    [3] Manage Customers
+    [4] Manage Transactions
     
     Enter selected option: """
 

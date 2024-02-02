@@ -9,14 +9,15 @@ class CustomerCRUD:
         self.engine = create_engine(f'sqlite:///{DATABASE_NAME}')
         self.Session = sessionmaker(bind=self.engine)
 
-    def create_customer(self, first_name, last_name, email, address, mobile_number):
+    def create_customer(self, first_name, last_name, email, mobile_number, address):
         session = self.Session()
         try:
             customer = {'FirstName': first_name,
                         'LastName': last_name,
                         'Email': email,
-                        'Address': address,
-                        'MobileNumber': mobile_number}
+                        'MobileNumber': mobile_number,
+                        'Address': address}
+
             new_customer = Customer(**customer)
             session.add(new_customer)
             session.commit()

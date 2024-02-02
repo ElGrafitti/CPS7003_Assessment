@@ -4,7 +4,7 @@ from cps7003.cps7003_assessment_2.database.stmarysdatatechsolutions import DATAB
 from sqlalchemy import create_engine
 
 
-class ModuleCRUD:
+class DepartmentCRUD:
     def __init__(self):
         self.engine = create_engine(f'sqlite:///{DATABASE_NAME}')
         self.Session = sessionmaker(bind=self.engine)

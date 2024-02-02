@@ -9,4 +9,7 @@ class Customer(Base):
     CustomerID = Column(Integer, primary_key=True, autoincrement=True)
     FirstName = Column(String, nullable=False)
     LastName = Column(String, nullable=False)
+    Email = Column(String, nullable=False)
+    MobileNumber = Column(Integer, nullable=False)
+    Address = Column(String, nullable=False)
 
